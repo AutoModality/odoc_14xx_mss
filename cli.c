@@ -67,7 +67,7 @@
  */
 CLI_MCB     gCLI;
 #define CLI_BYPASS 1
-#define MAX_RADAR_CMD               28
+#define MAX_RADAR_CMD 24
 uint8_t* radarCmdString[MAX_RADAR_CMD] =
 {
      {"sensorStop \n\r"},
@@ -76,21 +76,22 @@ uint8_t* radarCmdString[MAX_RADAR_CMD] =
      {"channelCfg 15 7 0 \n\r"},
      {"adcCfg 2 1 \n\r"},
      {"adcbufCfg 0 1 0 1 \n\r"},
-     {"profileCfg 0 77 7 7 58 0 0 68 1 225 4500 0 0 30 \n\r"},
+     {"profileCfg 0 77 7 7 57.14 0 0 70 1 240 4884 0 0 34 \n\r"},
      {"chirpCfg 0 0 0 0 0 0 0 1 \n\r"},
      {"chirpCfg 1 1 0 0 0 0 0 4 \n\r"},
      {"chirpCfg 2 2 0 0 0 0 0 2 \n\r"},
      {"frameCfg 0 2 16 0 100 1 0 \n\r"},
-     {"guiMonitor 1 0 0 0 0 1 \n\r"},
-     {"cfarCfg 0 2 8 4 3 0 1200 \n\r"},
-     {"peakGrouping 1 1 1 1 224 \n\r"},
+     {"lowPower 0 0 \n\r"},
+     {"guiMonitor 1 0 0 0 0 0 \n\r"},
+     {"cfarCfg 0 2 8 4 3 0 768 \n\r"},
+     {"peakGrouping 1 1 1 1 229 \n\r"},
      {"multiObjBeamForming 1 0.5 \n\r"},
      {"clutterRemoval 0 \n\r"},
      {"calibDcRangeSig 0 -5 8 256 \n\r"},
      {"compRangeBiasAndRxChanPhase 0.0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 \n\r"},
      {"measureRangeBiasAndRxChanPhase 0 1.5 0.2 \n\r"},
-     {"CQRxSatMonitor 0 3 4 127 0 \n\r"},
-     {"CQSigImgMonitor 0 111 4 \n\r"},
+     {"CQRxSatMonitor 0 3 5 123 0 \n\r"},
+     {"CQSigImgMonitor 0 119 4 \n\r"},
      {"analogMonitor 1 1 \n\r"},
      {"sensorStart \n\r"},
 };
