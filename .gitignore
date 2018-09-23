@@ -30,5 +30,6 @@
 
 # Eclipse artefacts
 .metadata
-RemoteSystemsTempFiles
-Debug
+RemoteSystemsTempFiles/
+Debug/
+Release/

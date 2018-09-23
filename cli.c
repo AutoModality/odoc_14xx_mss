@@ -67,7 +67,7 @@
  */
 CLI_MCB     gCLI;
 #define CLI_BYPASS 1
-#define MAX_RADAR_CMD 24
+#define MAX_RADAR_CMD 23
 uint8_t* radarCmdString[MAX_RADAR_CMD] =
 {
      {"sensorStop \n\r"},
@@ -80,8 +80,7 @@ uint8_t* radarCmdString[MAX_RADAR_CMD] =
      {"chirpCfg 0 0 0 0 0 0 0 1 \n\r"},
      {"chirpCfg 1 1 0 0 0 0 0 4 \n\r"},
      {"chirpCfg 2 2 0 0 0 0 0 2 \n\r"},
-     {"frameCfg 0 2 16 0 100 1 0 \n\r"},
-     {"lowPower 0 0 \n\r"},
+     {"frameCfg 0 2 16 0 66.667 1 0 \n\r"},
      {"guiMonitor 1 0 0 0 0 0 \n\r"},
      {"cfarCfg 0 2 8 4 3 0 768 \n\r"},
      {"peakGrouping 1 1 1 1 229 \n\r"},
